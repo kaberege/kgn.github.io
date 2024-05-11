@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>myTask</title>
+  <link rel="icon" type="image/x-icon" href="Saria.jpg">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/821e790606.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="andelaTask.css">
+</head>
+
+<body>
+  <form>
+    <div class="formDiv">
+      <label id="labelName" for="sendName">Sender</label>
+      <input type="text" id="sendName" maxlength="15"><br>
+    </div>
+    <div class="formDiv">
+      <label id="labesend" for="sendNUmber">Sender's Number</label>
+      <input type="text" id="sendNumber" maxlength="10"><br>
+    </div>
+    <div class="formDiv">
+      <label id="labelReceive" for="receiveName">Receiver</label>
+      <input type="text" id="receiveName" maxlength="15"><br>
+    </div>
+    <div class="formDiv">
+      <label id="labelName" for="receiveNUmber">Receiver's Number</label>
+      <input type="text" id="receiveNumber" maxlength="10"><br>
+    </div>
+    <div class="formDiv">
+      <label id="labeAmount" for="amount">Amount</label>
+      <input type="number" id="amount" max="10000" min="100"> <br>
+    </div>
+    <div class="formDiv">
+      <input type="submit" value="Send" id="submitted">
+    </div>
+  </form>
+  <div id="myDiv">
+    <table id="momo-table">
+    </table>
+  </div>
+  <script src="andelaTask.js"></script>
+</body>
+
+</html>
