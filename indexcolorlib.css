@@ -1393,28 +1393,28 @@ height: auto;
 .animatedp {
   position: relative;
   background-color: blue;
-  animation: real 10s linear 0.5s infinite;
+  animation: real 10s linear 0.1s infinite;
 }
 
 @keyframes real {
   0% {
-    background: url('unilogo.webp') no-repeat center;
+    background: url('fruits.jpg') no-repeat center;
   }
 
   25% {
-    background: url('h1_hero1.jpg.webp') no-repeat center;
+    background: url('favicon.jpg') no-repeat center;
   }
 
   50% {
-    background: url('blog1.jpg.webp') no-repeat center;
+    background: url('fruits.jpg') no-repeat center;
   }
 
   75% {
-    background: url('blog2.jpg.webp') no-repeat center;
+    background: url('auge2.jpg') no-repeat center;
   }
 
   100% {
-    background: url('sari.jpg') no-repeat center;
+    background: url('Sari.jpg') no-repeat center;
   }
 }
 
