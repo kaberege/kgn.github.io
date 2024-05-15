@@ -1,6 +1,6 @@
 /*  Styling the countDate section */
 
-let [days, hours, minutes, seconds] = [29, 23, 59, 59];
+let [days, hours, minutes, seconds] = [100, 23, 59, 59];
 timer = setInterval(myCount, 1000);
 function myCount() {
   seconds--;
