@@ -5,45 +5,10 @@
 }
 
 
-.hcol {
-  width: 70px;
-  height:70px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 .hdot {
   color: #0f0;
 }
 
-.huni {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-  height: 70px;
-  color: rgba(180, 180, 180, 1);
-  cursor: pointer;
-}
-
-.headList {
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style-type: none;
-  justify-content: center;
-}
-
-.headList>li {
-  border-left: 1px solid rgba(180, 180, 180, 1);
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: #00ff00;
-}
 
 .headList>li:hover {
   background-color: #000;
@@ -67,7 +32,7 @@
 (min-width: 600px) {
   .header {
     width: 100%;
-    height: 70px;
+    height: 40px;
     display: flex;
     align-items: center;
     background-color: rgba(60, 60, 60, 1);
@@ -84,14 +49,21 @@
     margin: auto;
   }
 
+  .hcol {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
   .huni {
     width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 40px;
     gap: 3px;
     background-color: #000;
-    height: 70px;
     color: rgba(180, 180, 180, 1);
     font-size: 15px;
     cursor: pointer;
@@ -106,7 +78,7 @@
 @media only screen and (min-width: 768px) {
   .header {
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,8 +88,13 @@
     top: 0;
     z-index: 5;
   }
-  .hcol{
+
+  .hcol {
     margin-left: 15px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
   }
 
   .header1 {
@@ -137,7 +114,7 @@
     justify-content: center;
     gap: 3px;
     background-color: #000;
-    height: 70px;
+    height: 60px;
     color: rgba(180, 180, 180, 1);
     font-size: 19px;
     cursor: pointer;
@@ -148,7 +125,7 @@
   }
 
   .headList {
-    height: 70px;
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -159,8 +136,8 @@
 
   .headList>li {
     border-left: 1px solid rgba(180, 180, 180, 1);
-    width: 60px;
-    height: 70px;
+    width: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,11 +146,6 @@
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
 
 /*  Styling the countDate section */
 
@@ -221,7 +193,7 @@
 (min-width: 600px) {
   .countDate {
     padding: 10px 20px 10px 20px;
-    height: 140px;
+    height: 105px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -246,7 +218,7 @@
 
   .countDate {
     padding: 10px 20px 10px 20px;
-    height: 120px;
+    height: 105px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -297,28 +269,18 @@
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
 
 /* Styling  University Logo section */
 
 .unilogo {
   width: 100%;
-  padding: 0 5% 0 5%;
-  height: 80px;
+  padding: 0 1% 0 1%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
-  top: 70px;
   background-color: #fff;
   z-index: 5;
-}
-
-#unimg > img{
-width: 120px;
-height: auto;
 }
 
 .newbar {
@@ -331,24 +293,24 @@ height: auto;
   text-decoration: none;
 }
 
-.dropdoun {
+.dropdounn {
   display: none;
   position: absolute;
   padding-top: 27px;
   width: 150px;
-  height: 140px;
+  height: auto;
   z-index: 2;
 }
 
-.dropdoun>a {
+.dropdounn>a {
   display: block;
-  margin: 12px;
+  margin: 9px;
   font-size: 23px;
   color: rgba(70, 70, 70, 1);
   text-decoration: none;
 }
 
-.dropdoun>a:hover {
+.dropdounn>a:hover {
   color: rgba(10, 140, 80, 1);
 }
 
@@ -356,7 +318,7 @@ height: auto;
   color: rgba(10, 140, 80, 1);
 }
 
-.unicolor:hover .dropdoun {
+.unicolor:hover .dropdounn {
   display: block;
   background-color: #fff;
 }
@@ -448,6 +410,49 @@ height: auto;
 .boxdrop .unicolor a {
   font-size: 18px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px),
+(min-width: 600px) {
+  .unilogo {
+    height: 40px;
+    position: sticky;
+    top: 40px;
+
+  }
+  #unimg{
+    display: flex;
+    align-items: center;
+  }
+  #unimg>img {
+    width: 100px;
+    height: 38px;
+    
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .unilogo {
+    height: 60px;
+    position: sticky;
+    top: 60px;
+  }
+  
+    #unimg{
+      display: flex;
+      align-items: center;
+    }
+    #unimg>img {
+      width: 120px;
+      height: 45px;
+      
+    }
+  }
+
+  
+
 
 /* Styling education School section */
 
@@ -1640,10 +1645,12 @@ height: auto;
 .unifooter {
   background-color: rgba(60, 70, 90, 1);
 }
-.picfooter>img{
-width: 150px;
-height: 50px;
+
+.picfooter>img {
+  width: 150px;
+  height: 50px;
 }
+
 .quick-footer>h1,
 .pro-footer>h1,
 .re-footer>h1,
