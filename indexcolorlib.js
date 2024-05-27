@@ -33,80 +33,18 @@ function myCount() {
 
 //==========================================================================
 /* Styling  University Logo section */
-const uniLog = document.getElementById("unilogo");
-const unImg = document.getElementById("unimg");
-const faBars = document.createElement("div");
-faBars.classList.add("bars");
-faBars.innerHTML = "<i class='fas fa-bars'><i>";
-const myIcon = document.getElementById("myicon");
-const icoBar = document.createElement("div");
-const myBoxbar = document.getElementById("boxbar");
-icoBar.classList.add("icobar");
-const myBar = document.getElementById("icobare");
-const logBox = document.createElement("div");
-logBox.classList.add("logbox");
-const myCallus = document.querySelector(".callus");
-const myLong = document.querySelector(".longbar");
-
-window.addEventListener("resize", myLogo);
-window.addEventListener("load", myLogo);
-
-function myLogo() {
-  let newBar = faBars.firstChild;
-  newBar.classList.add("newbar");
-  if (window.innerWidth <= 600) {
-    uniLog.innerHTML = "";
-    uniLog.appendChild(unImg);
-    uniLog.appendChild(faBars);
-    uniLog.appendChild(myBoxbar);
-    myBoxbar.style.display = "none";
-    newBar.addEventListener("click", () => {
-      if (myBoxbar.style.display === "none") {
-        myBoxbar.style.display = "block";
-      } else {
-        myBoxbar.style.display = "none";
-      }
-      myBoxbar.classList.toggle("boxdrop");
-    });
-  } else if (window.innerWidth < 922) {
-    uniLog.innerHTML = "";
-    uniLog.appendChild(unImg);
-    icoBar.appendChild(myIcon);
-    icoBar.appendChild(faBars);
-    uniLog.appendChild(icoBar);
-    uniLog.appendChild(myBoxbar);
-    myBoxbar.style.display = "none";
-    newBar.addEventListener("click", () => {
-      if (myBoxbar.style.display === "none") {
-        myBoxbar.style.display = "block";
-      } else {
-        myBoxbar.style.display = "none";
-      }
-      myBoxbar.classList.toggle("boxdrop");
-    });
-  } else if (window.innerWidth <= 1200) {
-    uniLog.innerHTML = "";
-    myBoxbar.style.display = "none";
-    myBoxbar.classList.remove("boxdrop");
-    logBox.appendChild(unImg);
-    logBox.appendChild(myBoxbar);
-    myBoxbar.style.display = "flex";
-    uniLog.appendChild(logBox);
-    uniLog.appendChild(myIcon);
-  } else if (window.innerWidth >= 1200) {
-    uniLog.innerHTML = "";
-    myBoxbar.style.display = "none";
-    myBoxbar.classList.remove("boxdrop");
-    logBox.appendChild(unImg);
-    logBox.appendChild(myBoxbar);
-    myBoxbar.style.display = "flex";
-    myBar.appendChild(myCallus);
-    myBar.appendChild(myLong);
-    myBar.appendChild(myIcon);
-    uniLog.appendChild(logBox);
-    uniLog.appendChild(myBar);
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+var uniLog = document.getElementById("unilogo");
+const myBar = document.getElementById("myBar");
+myBar.addEventListener("click", myFunction)
+function myFunction(){
+  if(uniLog.className === "unilogo"){
+    uniLog.className = "responsive";
+  }else{
+    uniLog.className = "unilogo";
   }
 }
+
 
 //========================footer copyright year======================
 const date = new Date();
