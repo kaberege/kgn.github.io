@@ -1604,7 +1604,7 @@
   background-color: rgb(17, 196, 142, 0.2);
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
 }
 
 .pertner {
@@ -1625,28 +1625,31 @@
 .animatedp {
   position: relative;
   background-color: blue;
-  animation: real 10s linear 0.1s infinite;
+  animation: real 15s linear 0.1s infinite;
 }
 
 @keyframes real {
   0% {
-    background: url('fruits.jpg') no-repeat center;
+    background: url('1kgn.jpg') no-repeat center;
   }
 
-  25% {
-    background: url('favicon.jpg') no-repeat center;
+  20% {
+    background: url('2kgn.jpg') no-repeat center;
   }
 
-  50% {
-    background: url('fruits.jpg') no-repeat center;
+  40% {
+    background: url('3kgn.jpg') no-repeat center;
   }
 
-  75% {
-    background: url('auge2.jpg') no-repeat center;
+  60% {
+    background: url('4kgn.jpg') no-repeat center;
   }
 
-  100% {
-    background: url('Sari.jpg') no-repeat center;
+  80% {
+    background: url('5kgn.jpg') no-repeat center;
+  }
+  100%{
+    background: url("fruitskgn.jpg") no-repeat center;
   }
 }
 
@@ -1654,7 +1657,7 @@
 @media only screen and (max-width: 600px),
 (min-width: 600px) {
   .ourpertner {
-    padding: 70px 0 70px 0;
+    padding: 50px 0 50px 0;
   }
 
   .pertner {
@@ -1674,7 +1677,7 @@
   .animatedp {
     width: 90%;
     margin: 0 auto 0 auto;
-    height: 90px;
+    height: 145px;
   }
 }
 
@@ -1694,13 +1697,14 @@
 
   .animatedp {
     width: 70%;
+    height: 145px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .ourpertner {
-    padding: 75px 0 75px 0;
+    padding: 60px 0 60px 0;
   }
 
   .pertner {
