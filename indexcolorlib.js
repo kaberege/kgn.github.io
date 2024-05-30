@@ -44,6 +44,11 @@ function myFunction(){
     uniLog.className = "unilogo";
   }
 }
+window.addEventListener("resize",()=>{
+if(window.innerWidth >= 920){
+  uniLog.className = "unilogo";
+}
+});
 
 
 //========================footer copyright year======================
