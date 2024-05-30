@@ -180,11 +180,18 @@
 }
 
 .learnDate {
+  max-width: 97px;
   color: rgba(255, 255, 255, 1);
   font-size: 20px;
   text-decoration: none;
   padding-bottom: 5px;
   border-bottom: 2px solid rgba(255, 255, 255, 1);
+  transition: all 0.5s ease;
+}
+
+.learnDate:hover {
+  letter-spacing: 1px;
+  max-width: 105px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -282,11 +289,6 @@
 .newbar {
   cursor: pointer;
 }
-
-.unicolor {
-  overflow: hidden;
-}
-
 .unicolor>a {
   font-size: 23px;
   color: rgba(70, 70, 70, 1);
@@ -318,7 +320,7 @@
   display: block;
   position: absolute;
   z-index: 6;
-  background-color: #fff;
+  background-color: #fff
 }
 
 .boxbar {
@@ -360,8 +362,8 @@
   color: rgba(0, 200, 255, 1);
 }
 
-.youtube {
-  color: rgb(138,43,226);
+.mydiscord {
+  color: rgb(138, 43, 226);
 }
 
 .envelope {
@@ -517,14 +519,17 @@
   .icobar {
     margin-right: 25px;
   }
-  .icobar2{
+
+  .icobar2 {
     display: flex;
     align-items: center;
   }
-  .icobar2>a{
+
+  .icobar2>a {
     display: flex;
     align-items: center;
   }
+
   .callus,
   .longbar {
     display: none;
@@ -579,18 +584,22 @@
   .responsive .unicolor .dropdounn {
     left: 43%;
   }
+
   .callus,
   .longbar {
     display: none;
   }
- .responsive .icobar {
+
+  .responsive .icobar {
     margin-right: 25px;
   }
-  .responsive.icobar2{
+
+  .responsive.icobar2 {
     display: flex;
     align-items: center;
   }
-  .responsive.icobar2>a{
+
+  .responsive.icobar2>a {
     display: flex;
     align-items: center;
   }
@@ -603,9 +612,11 @@
   .unilogo div.boxbar {
     display: flex;
   }
-.dropdounn{
-  z-index: 3;
-}
+
+  .dropdounn {
+    z-index: 3;
+  }
+
   .unilogo a.barIcon {
     display: none;
   }
@@ -617,14 +628,17 @@
     gap: 20px;
     margin-right: 0;
   }
-  .icobar2{
+
+  .icobar2 {
     display: flex;
     align-items: center;
   }
-  .icobar2>a{
+
+  .icobar2>a {
     display: flex;
     align-items: center;
   }
+
   .callus,
   .longbar {
     display: none;
@@ -633,6 +647,7 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
   .callus,
   .longbar {
     display: flex;
@@ -758,12 +773,15 @@
   text-decoration: none;
   font-size: 20px;
   color: rgba(10, 130, 90, 1);
+  padding-bottom: 4px;
+  border-bottom: solid 2px rgba(10, 130, 90, 1);
+  max-width: 97px;
+  transition: all 0.5s ease;
 }
 
-.learn1 {
-  width: 100px;
-  height: 2px;
-  background-color: rgba(10, 130, 90, 1);
+.learnm:hover {
+  letter-spacing: 1px;
+  max-width: 105px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -944,14 +962,15 @@
   text-decoration: none;
   font-size: 20px;
   color: rgba(10, 130, 90, 1);
+  padding-bottom: 5px;
+  border-bottom: solid 2px rgba(10, 130, 90, 1);
+  max-width: 97px;
+  transition: all 0.5s ease;
 }
 
-.learnb p {
-  height: 2px;
-  width: 95px;
-  background-color: rgba(10, 130, 90, 1);
-  margin-top: 7px;
-  cursor: pointer;
+.learnb:hover {
+  letter-spacing: 1px;
+  max-width: 105px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -1343,8 +1362,12 @@
   color: rgba(10, 130, 90, 1);
   padding-bottom: 4px;
   border-bottom: 2px solid rgba(10, 130, 90, 1);
+  transition: all 0.5s ease;
 }
-
+.topmore>a:hover{
+  letter-spacing: 1px;
+  max-widthn: 90px;
+}
 .story1>p {
   color: rgba(0, 0, 20, 1);
 }
