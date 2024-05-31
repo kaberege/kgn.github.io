@@ -771,17 +771,18 @@
 }
 
 .learnm {
+  text-align: center;
   text-decoration: none;
   color: rgba(10, 130, 90, 1);
   padding-bottom: 4px;
   border-bottom: solid 2px rgba(10, 130, 90, 1);
   transition: all 0.5s ease;
-  width: 108px;
+  width: 105px;
 }
 
 .learnm:hover {
   letter-spacing: 1px;
-  width: 118px;
+  width: 115px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1813,7 +1814,7 @@
   }
 
   .link-hr {
-    width: 85px;
+    width: 75px;
     font-size: 17px;
     padding-bottom: 5px;
     border-bottom: 2px solid #fff;
@@ -1823,7 +1824,9 @@
 
   .link-hr:hover {
     letter-spacing: 1px;
-    width: 95px;
+    width: 85px;
+    color: rgba(255,255,255, 0.4);
+    border-bottom: solid 2px rgba(255,255,255, 0.4);
   }
 }
 
@@ -1872,6 +1875,9 @@
 
   .trust-p {
     font-size: 23px;
+  }
+  .link-hr{
+    font-size: 19px;
   }
 
 }
