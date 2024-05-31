@@ -179,7 +179,8 @@
   font-weight: bold;
 }
 
-.learnDate{
+.learnDate {
+  text-align: center;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   padding-bottom: 5px;
@@ -288,6 +289,7 @@
 .newbar {
   cursor: pointer;
 }
+
 .unicolor>a {
   font-size: 23px;
   color: rgba(70, 70, 70, 1);
@@ -815,7 +817,8 @@
     width: 90%;
     height: 340px;
   }
-  .learnm{
+
+  .learnm {
     font-size: 19px;
   }
 }
@@ -889,7 +892,8 @@
   .ascomp1 {
     width: 90%;
   }
-  .learnm{
+
+  .learnm {
     font-size: 20px;
   }
 }
@@ -971,7 +975,7 @@
   transition: all 0.5s ease;
 }
 
-.learnb a:hover{
+.learnb a:hover {
   letter-spacing: 1px;
   max-width: 106px;
 }
@@ -1029,7 +1033,8 @@
     height: 200px;
     padding-bottom: 40px;
   }
-  .learnb a{
+
+  .learnb a {
     font-size: 18px;
   }
 }
@@ -1088,7 +1093,8 @@
     height: 200px;
     padding-bottom: 40px;
   }
-  .learnb a{
+
+  .learnb a {
     font-size: 18px;
   }
 }
@@ -1156,7 +1162,8 @@
   .facarts>img {
     height: 250px;
   }
-  .learnb a{
+
+  .learnb a {
     font-size: 20px;
   }
 }
@@ -1370,17 +1377,20 @@
 }
 
 .topmore>a {
+  text-align: center;
   text-decoration: none;
   color: rgba(10, 130, 90, 1);
   padding-bottom: 4px;
   border-bottom: 2px solid rgba(10, 130, 90, 1);
   transition: all 0.5s ease;
-  width: 115px;
+  width: 116px;
 }
-.topmore>a:hover{
+
+.topmore>a:hover {
   letter-spacing: 1px;
-  width: 123px;
+  width: 124px;
 }
+
 .story1>p {
   color: rgba(0, 0, 20, 1);
 }
@@ -1657,7 +1667,8 @@
   80% {
     background: url('5kgn.jpg') no-repeat center;
   }
-  100%{
+
+  100% {
     background: url("fruitskgn.jpg") no-repeat center;
   }
 }
@@ -1802,16 +1813,17 @@
   }
 
   .link-hr {
-    max-width: 65px;
+    width: 75px;
     font-size: 17px;
     padding-bottom: 5px;
     border-bottom: 2px solid #fff;
     transition: all 0.5s ease;
+    text-align: center;
   }
 
   .link-hr:hover {
     letter-spacing: 1px;
-    max-width: 75px;
+    width: 85px;
   }
 }
 
