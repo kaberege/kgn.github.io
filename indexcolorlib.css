@@ -180,7 +180,7 @@
 }
 
 .learnDate {
-  max-width: 100px;
+  max-width: 110px;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   padding-bottom: 5px;
@@ -190,7 +190,7 @@
 
 .learnDate:hover {
   letter-spacing: 1px;
-  max-width: 110px;
+  max-width: 120px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -776,12 +776,12 @@
   padding-bottom: 4px;
   border-bottom: solid 2px rgba(10, 130, 90, 1);
   transition: all 0.5s ease;
-  width: 95px;
+  max-width: 101px;
 }
 
 .learnm:hover {
   letter-spacing: 1px;
-  width: 105px;
+  width: 110px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1377,11 +1377,11 @@
   padding-bottom: 4px;
   border-bottom: 2px solid rgba(10, 130, 90, 1);
   transition: all 0.5s ease;
-  max-width: 115px;
+  max-width: 120px;
 }
 .topmore>a:hover{
   letter-spacing: 1px;
-  max-width: 128px;
+  max-width: 135px;
 }
 .story1>p {
   color: rgba(0, 0, 20, 1);
