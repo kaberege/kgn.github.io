@@ -503,12 +503,10 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: red;
 }
 
-.our {
+.our-head {
   color: rgba(0, 0, 0, 1);
-  font-size: 40px;
 }
 
 .ourLorem {
@@ -523,13 +521,13 @@ body {
     gap: 20px;
   }
 
-  .our {
+  .our-head {
     font-size: 30px;
   }
 
   .ourLorem {
     font-size: 18px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto 0 auto;
   }
 }
@@ -541,7 +539,7 @@ body {
     gap: 20px;
   }
 
-  .our {
+  .our-head {
     font-size: 40px;
   }
 
@@ -566,24 +564,18 @@ body {
 /* Styiling grid picture */
 
 .gridPicture {
-  width: 100%;
   background-color: #fff;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 350px 350px;
-  padding-left: 15px;
-  padding-right: 15px;
-  gap: 20px;
 }
 
 .gridImage {
-  position: relative
+  position: relative;
 }
 
 .gridImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: filter 0.5s ease;
 }
 
 .gridImage:hover img {
@@ -594,8 +586,9 @@ body {
   width: 100%;
   display: none;
   position: absolute;
-  top: 50%;
   text-align: center;
+  transition: all 1s ease;
+  top: 46%;
 }
 
 .gridImage:hover .hidden {
@@ -608,12 +601,22 @@ body {
 (min-width: 600px) {
   .gridPicture {
     width: 100%;
-    background-color: #fff;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 350px;
-    padding-left: 4%;
-    padding-right: 4%;
+    grid-template-columns: auto;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+    padding: 20px 5% 50px 5%;
+    gap: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .gridPicture {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 370px 370px 370px 370px 370px 370px;
+    padding: 20px 5% 60px 5%;
     gap: 20px;
   }
 }
@@ -621,13 +624,10 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .gridPicture {
-    width: 100%;
-    background-color: #fff;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     grid-template-rows: 350px 350px 350px;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding: 20px 2% 60px 2%;
     gap: 20px;
   }
 }
@@ -635,13 +635,10 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .gridPicture {
-    width: 100%;
-    background-color: #fff;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 350px 350px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 20px 2% 60px 2%;
     gap: 20px;
   }
 }
@@ -649,21 +646,7 @@ body {
 /* Styling black grid section */
 
 .blackGrid {
-  display: grid;
-  width: 82%;
   background-color: rgba(0, 0, 0, 1);
-  grid-template-columns: auto 270px 270px;
-  grid-template-rows: 200px 200px;
-  gap: 20px;
-  padding: 20px;
-}
-
-.gridLorem>h2 {
-  font-size: 20px;
-}
-
-.gridLorem p {
-  font-size: 17px;
 }
 
 .gridLorem h2,
@@ -671,88 +654,162 @@ body {
   color: #fff;
 }
 
+.aa {
+  transition: all 1s ease;
+}
+
+.aa:hover {
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .gridLorem p {
   color: rgba(200, 200, 200, 0.6);
 }
 
-.itTable {
-  grid-row: 1/span 2;
-}
-
-.itTable img {
-  width: 80%;
-  height: 100%;
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px),
-(min-width: 600px) {
+@media only screen and (max-width: 600px) {
   .blackGrid {
-    display: grid;
-    width: 82%;
-    background-color: rgba(0, 0, 0, 1);
-    grid-template-columns: 100%;
-    grid-template-rows: 200px;
-    gap: 30px;
-    padding: 5%;
-    margin-left: 10%;
-    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 6%;
+  }
+
+  .itTable {
+    height: 380px;
   }
 
   .itTable img {
     width: 100%;
     height: 100%;
+  }
+
+  .gridLorem>h2 {
+    font-size: 20px;
+  }
+
+  .gridLorem p {
+    font-size: 17px;
+  }
+
+  .gridLorem {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .aa {
+    width: 90px;
+  }
+
+  .aa:hover {
+    width: 100px
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .blackGrid {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 5%;
+    margin: 0 auto 0 auto;
+  }
+
+  .itTable {
+    height: 420px;
+  }
+
+  .itTable img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gridLorem>h2 {
+    font-size: 21px;
+  }
+
+  .gridLorem p {
+    font-size: 19px;
+  }
+
+  .gridLorem {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .aa {
+    font-size: 17px;
+    width: 94px;
+  }
+
+  .aa:hover {
+    width: 100px
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .blackGrid {
-    display: grid;
-    width: 82%;
-    background-color: rgba(0, 0, 0, 1);
-    grid-template-columns: 100%;
-    grid-template-rows: 200px;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 5%;
-    margin-left: 10%;
-    margin-top: 90px;
+    width: 70%;
+    padding: 3%;
   }
 
-  .itTable img {
-    width: 100%;
-    height: 100%;
+  .itTable {
+    height: 500px;
   }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .blackGrid {
-    display: grid;
-    width: 90%;
+    width: 98%;
     background-color: rgba(0, 0, 0, 1);
-    grid-template-columns: 45% 25% 25%;
-    grid-template-rows: 200px 200px;
+    display: grid;
+    grid-template-columns: 50% auto auto;
+    grid-template-rows: 190px 190px;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 5%;
-    margin-left: 5%;
-    margin-right 5%;
-    margin-top: 90px;
+    padding: 3%;
+  }
+
+  .itTable {
+    grid-row: 1/span 2;
+    height: auto;
   }
 
   .itTable img {
-    width: 90%;
-    height: 90%;
+    width: 350px;
+    height: 360px;
 
   }
 
   .gridLorem>h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .blackGrid {
+    width: 80%;
+    grid-template-rows: 200px 200px;
+    padding: 2%;
+  }
+
+  .itTable img {
+    width: 80%;
+    height: 90%;
+  }
+
 }
 
 /* Styling Testimonials */
