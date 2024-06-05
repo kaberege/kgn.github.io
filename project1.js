@@ -27,6 +27,55 @@ sideDelete.addEventListener("click", () => {
 });
 
 
+//========================Testimonials======================
+
+let slideIndex = 0;
+showSlide();
+
+const dotSlide1 = document.getElementById("dot1");
+dotSlide1.addEventListener("click", () => {
+    clearTimeout(timer);
+    currentSlide(0);
+});
+const dotSlide2 = document.getElementById("dot2");
+dotSlide2.addEventListener("click", () => {
+    clearTimeout(timer);
+    currentSlide(1);
+});
+const dotSlide3 = document.getElementById("dot3");
+dotSlide3.addEventListener("click", () => {
+    clearTimeout(timer);
+    currentSlide(2);
+});
+const dotSlide4 = document.getElementById("dot4");
+dotSlide4.addEventListener("click", () => {
+    clearTimeout(timer);
+    currentSlide(3);
+});
+
+function currentSlide(n) {
+    slideIndex = n;
+    showSlide();
+}
+
+function showSlide() {
+    let thisSlide = document.getElementsByClassName("test-fade");
+    let myDot = document.getElementsByClassName("dot1");
+    let i;
+    for (i = 0; i < thisSlide.length; i++) {
+        thisSlide[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > thisSlide.length) { slideIndex = 1; }
+    for (i = 0; i < myDot.length; i++) {
+        myDot[i].className = myDot[i].className.replace(" active", "");
+    }
+    thisSlide[slideIndex - 1].style.display = "flex";
+    myDot[slideIndex - 1].className += " active";
+    timer = setTimeout(showSlide, 2000);
+}
+
+
 //========================footer copyright year======================
 const date = new Date();
 const currentYear = document.getElementById("thisYear");

@@ -825,13 +825,22 @@ body {
 .test {
   color: #000;
 }
-
+.animate-test{
+  overflow: hidden;
+}
 .test-fade {
-  display: flex;
+  overflow: hidden;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
+  position: relative;
+  animation: fading 0.2s ease;
+}
+@keyframes fading{
+  from{margin-right: -10%; }
+  to{margin-right: 0;}
 }
 
 .test-par>p {
@@ -867,6 +876,9 @@ body {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
+}
+.active{
+  background-color: aqua;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -987,7 +999,6 @@ atopp {
   font-size: 40px;
   font-weight: bold;
   margin-left: -30px;
-  float-left;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
