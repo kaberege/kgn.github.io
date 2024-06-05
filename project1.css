@@ -839,7 +839,7 @@ body {
   animation: fading 0.2s ease;
 }
 @keyframes fading{
-  from{margin-right: -10%; }
+  from{margin-right: -5%; }
   to{margin-right: 0;}
 }
 
