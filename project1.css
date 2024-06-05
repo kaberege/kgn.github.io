@@ -774,10 +774,10 @@ body {
     background-color: rgba(0, 0, 0, 1);
     display: grid;
     grid-template-columns: 50% auto auto;
-    grid-template-rows: 190px 190px;
+    grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 45px;
     padding: 3%;
   }
 
@@ -787,8 +787,8 @@ body {
   }
 
   .itTable img {
-    width: 350px;
-    height: 360px;
+    width: 80%;
+    height: 95%;
 
   }
 
@@ -801,13 +801,12 @@ body {
 @media only screen and (min-width: 1200px) {
   .blackGrid {
     width: 80%;
-    grid-template-rows: 200px 200px;
     padding: 2%;
   }
 
   .itTable img {
-    width: 80%;
-    height: 90%;
+    width: 85%;
+    height: 98%;
   }
 
 }
@@ -815,87 +814,139 @@ body {
 /* Styling Testimonials */
 
 .testimony {
-  width: 100%;
-  height: 550px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
-  box-sizing: border-box;
+  gap: 20px;
 }
 
 .test {
-  font-size: 30px;
   color: #000;
-  padding-bottom: 20px;
 }
 
-.testlorem {
-  line-height: 150%;
-  font-size: 25px;
+.test-fade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.test-par>p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.image-fade {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.john1 {
+  border-radius: 50%;
+}
+
+.john {
+  font-size: 16px;
   color: rgba(10, 20, 30, 0.8);
-  padding-bottom: 20px;
-  text-align-last: center;
+}
+
+.bigdot {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot1 {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px),
 (min-width: 600px) {
   .testimony {
-    width: 80%;
-    margin: 1px auto 1px auto;
-    color: red;
+    padding: 50px 2% 50px 2%;
   }
 
-  .testlorem {}
+  .test {
+    font-size: 35px;
+  }
+
+  .test-par>p {
+    font-size: 20px;
+  }
+
+  .john1 {
+    width: 50px;
+    height: 50px;
+  }
+  .dot1 {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .testimony {
+    padding: 70px 2% 70px 2%;
+  }
+  .test {
+    font-size: 37px;
+  }
+  .test-par{
     width: 80%;
-    margin: 1px auto 1px auto;
+    margin: 0 auto 0 auto;
+  }
+  .test-par>p {
+    font-size: 22px;
+  }
+  .dot1 {
+    width: 15px;
+    height: 15px;
+  }
+  .john1 {
+    width: 70px;
+    height: 70px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .testimony {
-    width: 90%;
-    margin: 1px auto 1px auto;
+  .test {
+    font-size: 39px;
+  }
+  .test-par{
+    width: 70%;
+    margin: 0 auto 0 auto;
+  }
+  .test-par>p {
+    font-size: 24px;
   }
 
-  .testlorem {
-    width: 60%;
-    margin: 1px auto 1px auto;
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .test {
+    font-size: 41px;
+  }
+  .test-par{
+    width: 65%;
+    margin: 0 auto 0 auto;
+  }
+  .test-par>p {
+    font-size: 27px;
   }
 }
 
-.john1 {
-  border-radius: 50%;
-  float: left;
-  margin-top: -30px;
-}
-
-.john {
-  font-size: 16px;
-  color: rgba(10, 20, 30, 0.8);
-  padding-left: 20px;
-}
-
-.bigdot {
-  display: flex;
-  box-sizing: border-box;
-}
-
-.dot1 {
-  margin-top: -40px;
-  font-size: 90px;
-  color: rgba(200, 200, 200);
-  cursor: pointer;
-}
 
 /* Styling Our Services section */
 
