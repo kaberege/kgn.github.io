@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+bodyn {
   background-color: rebeccapurple;
 }
 
@@ -819,7 +819,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .test {
@@ -834,12 +834,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 25px;
   position: relative;
-  animation: fading 0.2s ease;
+  animation: fading 0.4s ease;
 }
 @keyframes fading{
-  from{margin-right: -5%; }
+  from{margin-right: -10%; }
   to{margin-right: 0;}
 }
 
@@ -891,9 +891,17 @@ body {
   .test {
     font-size: 35px;
   }
+  .test-par{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: aqua;
+  }
 
   .test-par>p {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .john1 {
