@@ -791,6 +791,11 @@ bodyn {
     height: 95%;
 
   }
+  .gridLorem {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 
   .gridLorem>h2 {
     font-size: 20px;
@@ -1720,11 +1725,11 @@ atopp {
 
 .colrib {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 200, 200, 1);
 }
 
 .colrib:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(0, 200, 200, 0.5);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
