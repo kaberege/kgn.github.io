@@ -1043,13 +1043,6 @@ bodyn {
   transition: all 0.5s ease;
 }
 
-.atopp:hover {
-  text-decoration: underline;
-  letter-spacing: 1px;
-  color: rgba(0, 240, 200, 0.5);
-  ;
-}
-
 .serviUno {
   color: rgba(0, 240, 200, 1);
   font-weight: bold;
@@ -1097,6 +1090,13 @@ bodyn {
 
   .atopp {
     font-size: 16px;
+    width: 90px;
+  }
+  .atopp:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: rgba(0, 240, 200, 0.5);
+    width: 100px;
   }
 }
 
@@ -1130,6 +1130,13 @@ bodyn {
 
   .atopp {
     font-size: 17px;
+    width: 95px;
+  }
+  .atopp:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: rgba(0, 240, 200, 0.5);
+    width: 105px;
   }
 }
 
