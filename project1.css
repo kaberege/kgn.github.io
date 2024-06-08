@@ -1066,7 +1066,7 @@ bodyn {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 30px  4% 60px 4%;
+    padding: 30px 4% 60px 4%;
   }
 
   .ourServi {
@@ -1092,6 +1092,7 @@ bodyn {
     font-size: 16px;
     width: 90px;
   }
+
   .atopp:hover {
     text-decoration: underline;
     letter-spacing: 1px;
@@ -1132,6 +1133,7 @@ bodyn {
     font-size: 17px;
     width: 95px;
   }
+
   .atopp:hover {
     text-decoration: underline;
     letter-spacing: 1px;
@@ -1163,8 +1165,8 @@ bodyn {
   .servi {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows:  auto auto auto;
-    padding: 30px  7% 60px 7%;
+    grid-template-rows: auto auto auto;
+    padding: 30px 7% 60px 7%;
     gap: 40px;
   }
 
@@ -1174,12 +1176,13 @@ bodyn {
     font-size: 50px;
   }
 }
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .servi {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows:  auto auto auto;
+    grid-template-rows: auto auto auto;
     gap: 40px;
     padding: 30px 10% 60px 10%;
   }
@@ -1189,19 +1192,27 @@ bodyn {
 
 .blank1 {
   height: 2px;
-  background-color:  rgba(100, 100, 100, 0.6);
+  background-color: rgba(100, 100, 100, 0.6);
 }
 
 /* Styling about us section */
 
-.about-us{
+.abImg img {
+  border-radius: 5px;
+}
+
+.about-us {
   color: #000;
 }
-.par1,.par2,.about-par {
+
+.par1,
+.par2,
+.about-par {
   color: rgba(100, 100, 100, 1);
 }
 
-.headh2,.about1 i {
+.headh2,
+.about1 i {
   color: rgba(90, 90, 90, 1);
   font-weight: bold;
 }
@@ -1211,12 +1222,14 @@ bodyn {
   color: rgba(0, 240, 250, 1);
   transition: all 0.6s ease;
 }
-.a-learn:hover{
+
+.a-learn:hover {
   color: rgba(0, 240, 250, 0.5);
   text-decoration: underline;
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .aboutus {
     display: flex;
     flex-direction: column;
@@ -1229,48 +1242,58 @@ bodyn {
     height: 350px;
   }
 
-  .abImg,.aboutHead,.about1 {
+  .abImg,
+  .aboutHead,
+  .about1 {
     width: 90%;
     margin: 0 auto 0 auto;
   }
-  .aboutHead{
+
+  .aboutHead {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-  .about1{
+
+  .about1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  .about-us{
+
+  .about-us {
     font-size: 35px;
   }
-  .about-par{
+
+  .about-par {
     font-size: 20px;
   }
-  
+
   .headh2 {
     font-size: 21px;
   }
-  
+
   .par2 {
-    font-size: 17px;;
+    font-size: 17px;
+    ;
   }
-  
+
   .about1 i {
     font-size: 35px;
   }
-  .a-learn{
+
+  .a-learn {
     font-size: 16px;
     width: 90px;
   }
+
   .a-learn:hover {
     letter-spacing: 1px;
     width: 100px;
   }
 
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .aboutus {
@@ -1279,7 +1302,8 @@ bodyn {
     padding: 60px 0 60px 0;
     gap: 30px;
   }
-  .abImg{
+
+  .abImg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1290,42 +1314,51 @@ bodyn {
     height: 460px;
   }
 
-  .abImg,.aboutHead,.about1 {
+  .abImg,
+  .aboutHead,
+  .about1 {
     width: 75%;
     margin: 0 auto 0 auto;
   }
-  .aboutHead{
+
+  .aboutHead {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-  .about1{
+
+  .about1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  .about-us{
+
+  .about-us {
     font-size: 35px;
   }
-  .about-par{
+
+  .about-par {
     font-size: 20px;
   }
-  
+
   .headh2 {
     font-size: 21px;
   }
-  
+
   .par2 {
-    font-size: 17px;;
+    font-size: 17px;
+    ;
   }
-  
+
   .about1 i {
     font-size: 35px;
   }
-  .a-learn{
+
+  .a-learn {
     font-size: 16px;
     width: 90px;
   }
+
   .a-learn:hover {
     letter-spacing: 1px;
     width: 100px;
@@ -1340,16 +1373,26 @@ bodyn {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto;
+    padding: 60px 13% 60px 13%;
     gap: 30px;
   }
 
+  .abImg,
+  .aboutHead,
+  .about1 {
+    width: auto;
+    margin: 0;
+  }
+
   .abImg img {
-    width: 100%;
-    height: 80%;
+    width: 300px;
+    height: 300px;
   }
 
   .abImg {
-    grid-area: 4/ 1 / 4 / 1;
+    grid-area: 1/ 2 / 4 / 3;
+    display: flex;
+    align-items: flex-start;
   }
 
 }
@@ -1358,9 +1401,9 @@ bodyn {
 @media only screen and (min-width: 992px) {
   .aboutus {
     display: grid;
-    grid-template-columns: 33.3% 33.3% auto;
+    grid-template-columns: 27% 27% auto;
     grid-template-rows: auto auto;
-    padding: 70px auto 10px auto;
+    padding: 70px 13% 60px 13%;
     gap: 30px;
   }
 
@@ -1377,71 +1420,214 @@ bodyn {
     grid-area: 1 / 3 / 3 / 3;
   }
 
+  .about-par {
+    line-height: 160%;
+  }
+
+  .par2 {
+    line-height: 160%;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .aboutus {
+    grid-template-columns: 25% 25% auto;
+    padding: 70px 6% 60px 6%;
+    gap: 40px;
+  }
+
+  .abImg img {
+    width: 78%;
+    height: 82%;
+  }
+
+  .about-us {
+    font-size: 40px;
+  }
+
+  .about-par {
+    width: 80%;
+    font-size: 23px;
+    line-height: 160%;
+  }
+
+  .about1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .par2 {
+    line-height: 160%;
+  }
+
 }
 
 /* Styling Our Team section */
 
 .ourheading {
-  padding-bottom: 10px;
   color: #000;
-  font-size: 40px;
-}
-
-.ourimage {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  padding-bottom: 25px;
-}
-
-.imagetolist {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .johnR {
-  font-size: 20px;
   color: rgba(90, 90, 90, 1);
 }
 
 .cofounder {
-  font-size: 15px;
   color: rgba(90, 90, 90, 0.4);
-  padding-bottom: 15px;
 }
 
 .otlorem {
-  font-size: 18px;
   color: rgba(90, 90, 90, 0.8);
-  padding-bottom: 15px;
 }
 
 .ourLists {
   list-style-type: none;
-  display: flex;
+}
+.ourLists>li i{
   color: rgba(90, 90, 90, 1);
-  font-size: 25px;
-  gap: 7px;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.ourLists>li i:hover{
+  color: rgba(10, 10, 10, 1);
+  transform: rotateY(180deg);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px),
-(min-width: 600px) {
+@media only screen and (max-width: 600px) {
 
   .ourteam {
-    width: 80%;
+    padding: 70px 4% 80px 4%;
+    background-color: aquamarine;
     line-height: 150%;
-    margin: 150px auto 10px auto;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 
   .ourhead {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding: 10px 0 30px 0;
+  }
+
+  .ourheading {
+    font-size: 35px;
+  }
+
+  .ourimage {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  }
+
+  .imagetolist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nameTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .johnR {
+    font-size: 20px;
+  }
+
+  .cofounder {
+    font-size: 15px;
+  }
+
+  .otlorem {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .ourLists {
+    list-style-type: none;
+    display: flex;
+    font-size: 20px;
+    gap: 7px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+  .ourteam {
+    padding: 70px 0 80px 0;
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .ourhead {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 0 30px 0;
+    width: 70%;
+    margin: 0 auto 0 auto;
+  }
+
+  .ourheading {
+    font-size: 40px;
+  }
+
+  .ourimage {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+  }
+
+  .imagetolist {
+    width: 70%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nameTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .johnR {
+    font-size: 20px;
+  }
+
+  .cofounder {
+    font-size: 15px;
+  }
+
+  .otlorem {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .ourLists {
+    list-style-type: none;
+    display: flex;
+    font-size: 25px;
+    gap: 7px;
   }
 }
 
@@ -1449,13 +1635,11 @@ bodyn {
 @media only screen and (min-width: 768px) {
 
   .ourteam {
-    width: 80%;
-    margin: 150px auto 10px auto;
-    line-height: 150%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto;
     gap: 40px;
+    padding: 70px 10% 80px 10%;
   }
 
   .ourhead {
@@ -1465,6 +1649,10 @@ bodyn {
     align-items: flex-end;
 
   }
+  .imagetolist {
+    width: auto;
+    margin: 0;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1472,10 +1660,6 @@ bodyn {
 
 
   .ourteam {
-    width: 80%;
-    height: 700px;
-    margin: 150px auto 10px auto;
-    line-height: 150%;
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 40px;
@@ -1483,10 +1667,6 @@ bodyn {
 
   .ourhead {
     grid-column: 1 / span 4;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
   }
 }
 
