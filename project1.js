@@ -88,6 +88,12 @@ function myBlog() {
 }
 myBlog();
 
+//========================my contact form======================
+const myForm = document.getElementById("submit");
+myForm.addEventListener("click", (e)=>{
+e.preventDefault();
+alert('Message Sent to kgn');
+});
 //========================footer copyright year======================
 function myFooter() {
     const date = new Date();
