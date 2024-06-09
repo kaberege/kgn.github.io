@@ -75,8 +75,23 @@ function showSlide() {
     timer = setTimeout(showSlide, 2000);
 }
 
+//========================Blog section======================
+function myBlog() {
+    const bDate1 = document.getElementById("myDate1");
+    const bDate2 = document.getElementById("myDate2");
+    const bDate3 = document.getElementById("myDate3");
+    const myMonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+    const blogDate = new Date();
+    bDate1.innerHTML = myMonth[blogDate.getMonth()] + " " + blogDate.getDate() + "," + " " + blogDate.getFullYear();
+    bDate2.innerHTML = myMonth[blogDate.getMonth()] + " " + blogDate.getDate() + "," + " " + blogDate.getFullYear();
+    bDate3.innerHTML = myMonth[blogDate.getMonth()] + " " + blogDate.getDate() + "," + " " + blogDate.getFullYear();
+}
+myBlog();
 
 //========================footer copyright year======================
-const date = new Date();
-const currentYear = document.getElementById("thisYear");
-currentYear.innerHTML = date.getFullYear();
+function myFooter() {
+    const date = new Date();
+    const currentYear = document.getElementById("thisYear");
+    currentYear.innerHTML = date.getFullYear();
+}
+myFooter();
