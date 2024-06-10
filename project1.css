@@ -626,6 +626,7 @@ bodyn {
   display: block;
 }
 
+/* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px),
 (min-width: 600px) {
@@ -698,7 +699,7 @@ bodyn {
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .blackGrid {
     display: flex;
@@ -926,6 +927,7 @@ bodyn {
   background-color: aqua;
 }
 
+/* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px),
 (min-width: 600px) {
@@ -943,7 +945,7 @@ bodyn {
     justify-content: center;
     align-items: center;
     height: 120px;
-    background-color: aqua;
+    background-color: rgba(248, 248, 248, 1);
   }
 
   .test-par>p {
@@ -1059,7 +1061,7 @@ bodyn {
   gap: 10px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .servi {
     display: flex;
@@ -1227,7 +1229,7 @@ bodyn {
   text-decoration: underline;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .aboutus {
     display: flex;
@@ -1496,7 +1498,7 @@ bodyn {
   transform: rotateY(180deg);
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
   .ourteam {
@@ -1721,7 +1723,7 @@ bodyn {
   letter-spacing: 1px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .blogsection {
     line-height: 150%;
@@ -1984,7 +1986,7 @@ bodyn {
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .contactform {
     display: flex;
@@ -2037,7 +2039,7 @@ bodyn {
 
   .nameDiv,
   .email2 {
-    width: 80%;
+    width: 90%;
   }
 
   .fname2,
@@ -2046,7 +2048,7 @@ bodyn {
   }
 
   .textarea {
-    width: 80%;
+    width: 90%;
     height: 100px;
   }
 
@@ -2205,8 +2207,7 @@ bodyn {
 /* Styling let's get started section */
 
 .getstart {
-  width: 100%;
-  height: 130px;
+  padding: 50px 0 50px 0;
   background-color: rgba(0, 200, 200, 1);
   display: flex;
   justify-content: center;
@@ -2217,6 +2218,22 @@ bodyn {
   text-decoration: none;
   font-size: 30px;
   color: #fff;
+}
+
+.let:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .getstart {
+    padding: 40px 0 40px 0;
+  }
+
+  .let {
+    font-size: 27px;
+  }
+
 }
 
 /* Styling footer */
@@ -2232,27 +2249,20 @@ bodyn {
 .white,
 .ftsub {
   color: #fff;
-  font-size: 20px;
-  padding-bottom: 25px;
-}
-
-.ftabout {
-  width: 300px;
 }
 
 .ftp {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 18px;
 }
 
-.ftlist1 {
+.ftlist1,
+.ftlist2 {
   list-style-type: none;
 }
 
 .ftlist1 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 18px;
 }
 
 .ftlist1 a:hover {
@@ -2260,59 +2270,43 @@ bodyn {
 }
 
 .ftlist2 li {
-  padding-right: 10px;
+  color: rgba(255, 255, 255, 1);
+  transition: all 1s ease;
 }
 
-.ftlist2 i:hover {
-  color: rgba(255, 255, 255, 1);
+.ftlist2 li:hover {
+  color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
+  transform: rotateY(180deg);
 }
 
 .enteremail {
-  max-width: 150px;
-  height: 41px;
-  padding-left: 10px;
   background-color: rgba(0, 0, 0, 0);
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
-  border-left: 1px solid rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-  border-right: 0px;
   border-radius: 50px 0px 0px 50px;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .ftbutton {
-  width: 50px;
-  height: 43px;
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
-  border-right: 1px solid rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-  border-left: 0px;
-  border-radius: 0px 50px 50px 0px;
-  margin-left: -5px;
   cursor: pointer;
   color: #fff;
   background-color: rgba(0, 200, 200, 1);
+  border-radius: 0px 50px 50px 0px;
+}
+
+.ftbutton:hover {
+  background-color: rgba(0, 200, 200, 0.5);
 }
 
 .line {
-  height: 1px;
   background-color: rgba(255, 255, 255, 0.6);
-  margin: 100px 100px 40px 100px;
 }
 
 .copyright {
-  width: 80%;
-  margin: 0 auto 0 auto;
-  display: flex;
-  justify-content: center;
   color: rgba(255, 255, 255, 0.4);
-  font-size: 20px;
 }
 
 .heart {
   color: rgba(255, 0, 0, 0.7);
-  margin-top: -5px;
 }
 
 .colrib {
@@ -2324,78 +2318,201 @@ bodyn {
   color: rgba(0, 200, 200, 0.5);
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px),
-(min-width: 600px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .footer {
-    width: 100%;
+    padding: 50px 5% 60px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 
   .flexfooter {
-    width: 90%;
-    margin: 0 auto 1px auto;
-    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 80px;
-    padding: 100px;
-    line-height: 160%;
+    gap: 15px;
+    padding: 0 0 45px 0;
+  }
+
+  .ftabout,
+  .ftfeatures,
+  .ftfollow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .ftlist2 {
+    font-size: 20px;
     display: flex;
-    gap: 20px;
-    list-style-type: none;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 25px;
+    flex-direction: row;
+    gap: 7px;
+  }
+
+
+  .white,
+  .ftsub {
+    font-size: 19px;
+  }
+
+  .ftp {
+    font-size: 17px;
+  }
+
+
+  .ftlist1 li {
+    font-size: 17px;
+  }
+
+  .ftmail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .myEmail {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .enteremail {
+    outline: none;
+    border: solid 1px rgba(190, 190, 190, 1);
+    padding: 9px;
+    width: 90%;
+  }
+
+  .ftbutton {
+    outline: none;
+    padding: 9px;
+    border: none;
+    width: 50px;
+  }
+
+  .line {
+    height: 1px;
+    background-color: rgba(220, 220, 220, 1);
+  }
+  .copyright {
+    font-size: 16px;
+    text-align: center;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   .footer {
-    width: 100%;
+    padding: 50px 5% 60px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 
   .flexfooter {
-    width: 90%;
-    margin: 0 auto 1px auto;
-    height: auto;
+    width: 80%;
+    margin: 0 auto 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 80px;
-    padding: 100px;
-    line-height: 160%;
+    gap: 15px;
+    padding: 0 0 45px 0;
+  }
+
+  .ftabout,
+  .ftfeatures,
+  .ftfollow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .ftlist2 {
+    font-size: 20px;
     display: flex;
-    gap: 20px;
-    list-style-type: none;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 25px;
+    flex-direction: row;
+    gap: 7px;
   }
+
+
+  .white,
+  .ftsub {
+    font-size: 19px;
+  }
+
+  .ftp {
+    font-size: 17px;
+  }
+
+
+  .ftlist1 li {
+    font-size: 17px;
+  }
+
+  .ftmail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .myEmail {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .enteremail {
+    outline: none;
+    border: solid 1px rgba(190, 190, 190, 1);
+    padding: 10px;
+    width: 150px;
+  }
+
+  .ftbutton {
+    outline: none;
+    padding: 10px;
+    border: none;
+    width: 50px;
+  }
+
+  .line {
+    height: 1px;
+    background-color: rgba(220, 220, 220, 1);
+    width: 80%;
+    margin: 0 auto 0 auto;
+  } 
+  .copyright {
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .flexfooter {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .line,.copyright{
+    width: 90%;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .footer {
-    width: 100%;
+  .ftabout{
+    width: 30%;
   }
-
-  .flexfooter {
-    width: 90%;
-    margin: 0 auto 1px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 65px;
-    padding: 2%;
-    line-height: 160%;
+  .enteremail {
+    width: 200px;
   }
-
-  .ftmail {
-    flex: 40%;
-  }
-
 }
