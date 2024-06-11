@@ -90,10 +90,32 @@ myBlog();
 
 //========================my contact form======================
 const myForm = document.getElementById("submit");
-myForm.addEventListener("click", (e)=>{
-e.preventDefault();
-alert('Message Sent to kgn');
+myForm.addEventListener("click", (e) => {
+    e.preventDefault();
+    let myText = prompt("Please Enter your Name");
+    if (myText === null || myText === "") {
+        alert('Failed to send message to @kgn');
+    } else {
+        alert("Hello! " + myText + "\nYour message is sent to @kgn.");
+    }
 });
+
+//====================my footer email================================
+const mySub = document.getElementById("ftbutton");
+const myEmail = document.getElementById("ftemail");
+mySub.addEventListener("click", () => {
+    if(myEmail.value === null || myEmail.value === ""){
+        alert("Please Enter Your Email Address!");
+    }else{
+    if(confirm("Do you want to contact @kgn")){
+        alert('Email Sent to kgn');
+    }else{
+        alert('Failed to send Email to kgn'); 
+    }
+    myEmail.value = "";
+}
+});
+
 //========================footer copyright year======================
 function myFooter() {
     const date = new Date();

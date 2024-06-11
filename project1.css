@@ -1465,7 +1465,7 @@ bodyn {
 
 }
 
-/* Styling Our Team section */
+/* Styling Blogs section */
 
 .ourheading {
   color: #000;
@@ -1683,7 +1683,7 @@ bodyn {
   background-color: rgba(100, 100, 100, 0.6);
 }
 
-/* Styling Blog section */
+/* Styling Projects section */
 .bcreate {
   color: rgba(90, 230, 210, 1);
   text-decoration: none;
@@ -2269,12 +2269,12 @@ bodyn {
   color: rgba(255, 255, 255, 1);
 }
 
-.ftlist2 li {
+.ftlist2 li a>i {
   color: rgba(255, 255, 255, 1);
   transition: all 1s ease;
 }
 
-.ftlist2 li:hover {
+.ftlist2 li a>i:hover {
   color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
   transform: rotateY(180deg);
