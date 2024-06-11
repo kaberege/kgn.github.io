@@ -109,7 +109,7 @@ myForm.addEventListener("click", (e) => {
         }
     }
     myFirst.value = "";
-    myLast.value= "";
+    myLast.value = "";
     myMail.value = "";
     mySubject.value = "";
     myArea.value = "";

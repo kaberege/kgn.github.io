@@ -351,7 +351,7 @@ bodyn {
   width: 100%;
   height: 80vh;
   background-color: rgba(150, 150, 150, 0.5);
-  background-image: url("hero_1.jpg");
+  background-image: url("Publication1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -2394,6 +2394,7 @@ bodyn {
     height: 1px;
     background-color: rgba(220, 220, 220, 1);
   }
+
   .copyright {
     font-size: 16px;
     text-align: center;
@@ -2479,7 +2480,8 @@ bodyn {
     background-color: rgba(220, 220, 220, 1);
     width: 80%;
     margin: 0 auto 0 auto;
-  } 
+  }
+
   .copyright {
     font-size: 16px;
     text-align: center;
@@ -2501,7 +2503,9 @@ bodyn {
     flex-direction: row;
     justify-content: space-between;
   }
-  .line,.copyright{
+
+  .line,
+  .copyright {
     width: 90%;
   }
 
@@ -2509,9 +2513,10 @@ bodyn {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .ftabout{
+  .ftabout {
     width: 30%;
   }
+
   .enteremail {
     width: 200px;
   }
