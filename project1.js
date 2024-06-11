@@ -90,30 +90,45 @@ myBlog();
 
 //========================my contact form======================
 const myForm = document.getElementById("submit");
+const myFirst = document.getElementById("fname");
+const myLast = document.getElementById("lname");
+const myMail = document.getElementById("fmail");
+const mySubject = document.getElementById("fsubject");
+const myArea = document.getElementById("fmessage");
+
 myForm.addEventListener("click", (e) => {
     e.preventDefault();
-    let myText = prompt("Please Enter your Name");
-    if (myText === null || myText === "") {
-        alert('Failed to send message to @kgn');
+    if (myFirst.value === "" && myLast.value === "" && myMail.value === "" && mySubject.value === "" && myArea.value === "") {
+        alert("Please fill all empty fields and proceed again!");
     } else {
-        alert("Hello! " + myText + "\nYour message is sent to @kgn.");
+        let myText = prompt("Please Enter your First Name");
+        if (myText === null || myText === "") {
+            alert('Failed to send message to @kgn');
+        } else {
+            alert("Hello! " + myText + "\nYour message is sent to @kgn.");
+        }
     }
+    myFirst.value = "";
+    myLast.value= "";
+    myMail.value = "";
+    mySubject.value = "";
+    myArea.value = "";
 });
 
 //====================my footer email================================
 const mySub = document.getElementById("ftbutton");
 const myEmail = document.getElementById("ftemail");
 mySub.addEventListener("click", () => {
-    if(myEmail.value === null || myEmail.value === ""){
+    if (myEmail.value === null || myEmail.value === "") {
         alert("Please Enter Your Email Address!");
-    }else{
-    if(confirm("Do you want to contact @kgn")){
-        alert('Email Sent to kgn');
-    }else{
-        alert('Failed to send Email to kgn'); 
+    } else {
+        if (confirm("Do you want to contact @kgn")) {
+            alert('Email Sent to kgn');
+        } else {
+            alert('Failed to send Email to kgn');
+        }
+        myEmail.value = "";
     }
-    myEmail.value = "";
-}
 });
 
 //========================footer copyright year======================
