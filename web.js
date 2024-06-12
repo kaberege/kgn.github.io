@@ -50,6 +50,23 @@ if(window.innerWidth >= 920){
 }
 });
 
+//========================footer news letter ======================
+const myInput = document.getElementById("mail");
+const mySubmit = document.getElementById("sendmail");
+mySubmit.addEventListener("click", (e)=>{
+e.preventDefault();
+if(myInput.value == null || myInput.value == ""){
+  alert("Enter your email to proceed");
+}else{
+let myPro = prompt("Enter your Name here to proceed");
+if(myPro == ""){
+  alert("Your Name is required to proceed");
+}else{
+  alert("Well done! " + myPro + "\nYour subscription is marked");
+}
+myInput.value ="";
+}
+});
 
 //========================footer copyright year======================
 const date = new Date();

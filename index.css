@@ -154,6 +154,7 @@ bodyn {
   box-shadow: 1px 1px 5px 2px rgba(200, 200, 200, 1);
   border-top: 3px solid rgba(0, 200, 200, 1);
   z-index: 3;
+  border-radius: 7px;
 }
 
 .dropdown-content a {
@@ -161,6 +162,7 @@ bodyn {
   display: block;
   text-align: bottom;
   transition: all 1s ease;
+  border-radius: 7px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -216,7 +218,7 @@ bodyn {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4% 0 4%;
+    padding: 0 6% 0 4%;
   }
 
   .navlogo {

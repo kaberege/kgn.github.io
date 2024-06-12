@@ -277,13 +277,14 @@
 }
 
 
-/* Styling  University Logo section */
+/* Styling  navigation section */
 
 .unilogo {
   width: 100%;
   padding: 0 5% 0 5%;
   background-color: #fff;
   z-index: 5;
+  box-shadow: 1px 1px 4px 1px rgba(200, 200, 200, 1);
 }
 
 .newbar {
@@ -298,6 +299,8 @@
 
 .dropdounn {
   display: none;
+  box-shadow: 1px 1px 2px 1px rgba(180, 180, 180, 1);
+  border-radius: 5px;
 }
 
 .dropdounn>a {
@@ -445,6 +448,7 @@
     top: 40px;
     display: flex;
     align-items: center;
+    box-shadow: 1px 1px 2px 1px rgba(200, 200, 200, 1);
   }
 
   .responsive .unimg>img {
@@ -476,6 +480,8 @@
     width: 70%;
     left: 19%;
     margin-top: 39px;
+    box-shadow: 1px 1px 2px 1px rgba(190, 190, 190, 1);
+    border-radius: 5px;
   }
 
   .dropdounn {
@@ -550,6 +556,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 1px 1px 2px 1px rgba(190, 190, 190, 1);
   }
 
   .responsive .unimg {
@@ -580,6 +587,8 @@
     margin-top: 55px;
     width: 70%;
     left: 19%;
+    box-shadow: 1px 1px 2px 1px rgba(190, 190, 190, 1);
+    border-radius: 5px;
   }
 
   .responsive .unicolor .dropdounn {
@@ -1802,7 +1811,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 50px 20px 80px 30px;
+    padding: 20px 10px 20px 10px;
   }
 
   .trustedby>h1 {
@@ -1837,7 +1846,7 @@
   }
 
   .trustedby {
-    padding: 50px 250px 80px 30px;
+    padding: 40px 30px 30px 20px;
   }
 
   .trustedby>h1 {
@@ -1866,7 +1875,7 @@
 
   .trustedby {
     flex: 50%;
-    padding: 50px 70px 80px 20px;
+    padding: 30px 10px 50px 10px;
   }
 
   .trustedby>h1 {
@@ -1887,10 +1896,6 @@
 
   .trustgirl {
     padding: 0;
-  }
-
-  .trustedby {
-    padding: 50px 150px 80px 30px;
   }
 
   .trustedby>h1 {
@@ -1989,14 +1994,14 @@
 
 .copyright-footer {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   color: rgba(190, 190, 190, 1);
   border-top: 1px solid rgba(190, 190, 190, 1);
   padding-top: 20px;
 }
 
 .heart {
-  font-size: 20px;
+  font-size: 17px;
   color: rgba(10, 130, 90, 1);
   cursor: pointer;
 }
