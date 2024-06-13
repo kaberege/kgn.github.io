@@ -3,6 +3,15 @@
 const mySide = document.getElementById("mySideBar");
 const sideDelete = document.getElementById("sideRemove");
 const barIcon = document.getElementById("sideIcon");
+const icoAbout = document.getElementById("myAbout");
+const icoDown = document.getElementById("myCaret");
+const dropDiv = document.getElementById("myDropy");
+
+icoAbout.addEventListener("click", () => {
+    dropDiv.classList.toggle("toggleable");
+    icoDown.classList.toggle("turnIcon")
+
+});
 
 window.addEventListener("resize", () => {
     if (window.innerWidth >= 992) {
@@ -12,12 +21,13 @@ window.addEventListener("resize", () => {
 
 window.addEventListener("scroll", () => {
     if (mySide.className === "responsiveSide") {
-        mySide.className = "navlist";             //remove side bar on scroll
+        mySide.className = "navlist";             //remove sidebar on scroll
     }
 });
 
+
 barIcon.addEventListener("click", () => {
-    if (mySide.className === "navlist") {
+    if (mySide.className == "navlist") {
         mySide.className = "responsiveSide";     //display side bar when bar icon is clicked
     }
 });
@@ -25,7 +35,6 @@ barIcon.addEventListener("click", () => {
 sideDelete.addEventListener("click", () => {
     mySide.className = "navlist";                //remove the side bar when close icon is clicked
 });
-
 
 //========================Testimonials======================
 
@@ -37,16 +46,19 @@ dotSlide1.addEventListener("click", () => {
     clearTimeout(timer);
     currentSlide(0);
 });
+
 const dotSlide2 = document.getElementById("dot2");
 dotSlide2.addEventListener("click", () => {
     clearTimeout(timer);
     currentSlide(1);
 });
+
 const dotSlide3 = document.getElementById("dot3");
 dotSlide3.addEventListener("click", () => {
     clearTimeout(timer);
     currentSlide(2);
 });
+
 const dotSlide4 = document.getElementById("dot4");
 dotSlide4.addEventListener("click", () => {
     clearTimeout(timer);

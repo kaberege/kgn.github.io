@@ -301,6 +301,9 @@
   display: none;
   box-shadow: 1px 1px 2px 1px rgba(180, 180, 180, 1);
   border-radius: 5px;
+  position: absolute;
+  z-index: 6;
+  background-color: #fff
 }
 
 .dropdounn>a {
@@ -316,15 +319,13 @@
   color: rgba(10, 140, 80, 1);
 }
 
+
 .unicolor>a:hover {
   color: rgba(10, 140, 80, 1);
 }
 
-.unicolor:hover .dropdounn {
-  display: block;
-  position: absolute;
-  z-index: 6;
-  background-color: #fff
+.blogContent:hover>a{
+  color: rgba(10, 140, 80, 1);
 }
 
 .boxbar {
@@ -396,6 +397,18 @@
   display: none;
 }
 
+.responsive .mydisplay {
+  display: block;
+}
+
+#program>i {
+  transition: all 0.6s ease;
+}
+
+.responsive .rotate {
+  transform: rotateZ(-180deg);
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
@@ -430,7 +443,7 @@
   .unilogo a.barIcon {
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 20px;
     display: block;
   }
 }
@@ -466,7 +479,7 @@
     display: block;
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 20px;
   }
 
   .responsive div.boxbar {
@@ -500,7 +513,7 @@
     background-color: #fff;
     height: 60px;
     position: sticky;
-    top: 60px;
+    top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -552,7 +565,7 @@
     z-index: 5;
     height: 60px;
     position: sticky;
-    top: 60px;
+    top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -613,7 +626,17 @@
     display: flex;
     align-items: center;
   }
+}
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .unilogo {
+    top: 60px;
+  }
+
+  .responsive {
+    top: 60px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -625,6 +648,14 @@
 
   .dropdounn {
     z-index: 3;
+  }
+
+  .unicolor:hover .dropdounn {
+    display: block;
+  }
+
+  .unicolor:hover #program>i {
+    transform: rotateZ(-180deg);
   }
 
   .unilogo a.barIcon {
@@ -690,11 +721,16 @@
   font-weight: bold;
 }
 
+.get-link {
+  text-decoration: none;
+}
+
 .getbutton {
   color: #fff;
   background-color: rgba(0, 160, 160, 1);
   border: none;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .getbutton:hover {
@@ -1246,6 +1282,7 @@
   align-items: center;
   font-size: 30px;
   color: rgba(10, 130, 90, 1);
+  cursor: pointer;
 }
 
 .fstudents:hover {
@@ -1834,8 +1871,8 @@
   .link-hr:hover {
     letter-spacing: 1px;
     width: 85px;
-    color: rgba(255,255,255, 0.4);
-    border-bottom: solid 2px rgba(255,255,255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    border-bottom: solid 2px rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -1885,7 +1922,8 @@
   .trust-p {
     font-size: 23px;
   }
-  .link-hr{
+
+  .link-hr {
     font-size: 19px;
   }
 

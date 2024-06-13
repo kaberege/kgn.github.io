@@ -37,35 +37,51 @@ function myCount() {
 var uniLog = document.getElementById("unilogo");
 const myBar = document.getElementById("myBar");
 myBar.addEventListener("click", myFunction)
-function myFunction(){
-  if(uniLog.className === "unilogo"){
+function myFunction() {
+  if (uniLog.className === "unilogo") {
     uniLog.className = "responsive";
-  }else{
+  } else {
     uniLog.className = "unilogo";
   }
 }
-window.addEventListener("resize",()=>{
-if(window.innerWidth >= 920){
-  uniLog.className = "unilogo";
-}
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 992) {
+    uniLog.className = "unilogo";
+  }
 });
+
+//========================dropdown content ======================
+const myCaret = document.getElementById("caret");
+const myButton = document.getElementById("program");
+const myDrop = document.getElementById("myd");
+
+myButton.addEventListener("click", myDown);
+
+function myDown() {
+  if (window.innerWidth < 992) {
+    myDrop.classList.toggle("mydisplay");
+    myCaret.classList.toggle("rotate");
+  }
+}
+
 
 //========================footer news letter ======================
 const myInput = document.getElementById("mail");
 const mySubmit = document.getElementById("sendmail");
-mySubmit.addEventListener("click", (e)=>{
-e.preventDefault();
-if(myInput.value == null || myInput.value == ""){
-  alert("Enter your email to proceed");
-}else{
-let myPro = prompt("Enter your Name here to proceed");
-if(myPro == ""){
-  alert("Your Name is required to proceed");
-}else{
-  alert("Well done! " + myPro + "\nYour subscription is marked");
-}
-myInput.value ="";
-}
+
+mySubmit.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (myInput.value == null || myInput.value == "") {
+    alert("Enter your email to proceed");
+  } else {
+    let myPro = prompt("Enter your Name here to proceed");
+    if (myPro == "") {
+      alert("Your Name is required to proceed");
+    } else {
+      alert("Well done! " + myPro + "\nYour subscription is marked");
+    }
+    myInput.value = "";
+  }
 });
 
 //========================footer copyright year======================
