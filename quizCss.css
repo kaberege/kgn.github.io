@@ -4,11 +4,105 @@
   box-sizing: border-box;
 }
 
+.mycontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#nav {
+  background-color: rgba(240, 240, 240, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.myImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#navImg {
+  border-radius: 50%;
+}
+
+#listedNav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.navList>a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navList {
+  transition: all 1s ease;
+}
+
+.navList:hover {
+  transform: rotateY(180deg);
+}
+
+.linkedlin {
+  color: rgba(0, 200, 255, 1);
+}
+
+.mydiscord {
+  color: rgb(138, 43, 226);
+}
+
+.insta {
+  color: rgb(251, 173, 80);
+}
+
+.xeeter {
+  color: rgba(80, 0, 200, 1);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  #nav {
+    height: 41px;
+    padding: 0 3% 0 1%;
+  }
+
+  #navImg {
+    width: 40px;
+    height: 40px;
+  }
+
+  #question {
+    font-size: 17px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #nav {
+    height: 60px;
+    padding: 0 2% 0 1%;
+  }
+
+  #navImg {
+    width: 57px;
+    height: 57px;
+  }
+}
+
 .app {
   width: 90%;
   max-width: 600px;
   background-color: rgba(128, 230, 190, 0.4);
-  margin: 100px auto 10px;
+  margin: 0 auto 0;
   padding: 30px;
   border-radius: 10px;
 }
@@ -53,12 +147,10 @@
   margin: 20px auto 0;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
-.correct {
-  background: #9aeabc;
-}
-
-.incorrect {
-  background: #ff9393;
+#next-btn:hover {
+  background: rgba(0, 20, 237, 0.6);
+  letter-spacing: 1px;
 }

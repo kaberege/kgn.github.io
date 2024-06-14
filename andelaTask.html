@@ -10,34 +10,53 @@
 </head>
 
 <body>
-  <form>
-    <div class="formDiv">
-      <label id="labelName" for="sendName">Sender</label>
-      <input type="text" id="sendName" maxlength="15"><br>
+  <nav id="nav">
+    <div class="myImg">
+      <img id="navImg" src="main-logo.jpeg" alt="kgn" title="kgn">
+      <img id="navImg" src="green.jpg" alt="kgn" title="kgn">
     </div>
-    <div class="formDiv">
-      <label id="labesend" for="sendNUmber">Sender's Number</label>
-      <input type="text" id="sendNumber" maxlength="10"><br>
+    <ul id="listedNav">
+      <li class="navList"> <a href="https://www.linkedin.com/in/kaberege-godard-nestor-53a0b4215" target="_blank"
+          class="linkedlin"><i class="fab">&#xf08c;</i></a></li>
+      <li class="navList"> <a href="https://x.com/Kaberege_gn" target="_blank" class="xeeter"><i
+            class="fab">&#xf081;</i></a>
+      </li>
+      <li class="navList"> <a href="https://www.instagram.com/kgn_ke_hong/" target="_blank" class="insta"><i
+            class="fab">&#xf16d;</i></a></li>
+      <li class="navList"> <a href="https://discord.com/invite/Yx5CjAFM" target="_blank" class="mydiscord"><i
+            class='fab'>&#xf392;</i></a></li>
+    </ul>
+  </nav>
+  <div class="mycontainer">
+    <form>
+      <div class="formDiv">
+        <label id="labelName" for="sendName">Sender</label>
+        <input type="text" id="sendName" maxlength="15"><br>
+      </div>
+      <div class="formDiv">
+        <label id="labesend" for="sendNUmber">Sender's Number</label>
+        <input type="text" id="sendNumber" maxlength="10"><br>
+      </div>
+      <div class="formDiv">
+        <label id="labelReceive" for="receiveName">Receiver</label>
+        <input type="text" id="receiveName" maxlength="15"><br>
+      </div>
+      <div class="formDiv">
+        <label id="labelName" for="receiveNUmber">Receiver's Number</label>
+        <input type="text" id="receiveNumber" maxlength="10"><br>
+      </div>
+      <div class="formDiv">
+        <label id="labeAmount" for="amount">Amount</label>
+        <input type="number" id="amount" max="10000" min="100"> <br>
+      </div>
+      <div class="formDiv">
+        <input type="submit" value="Send" id="submitted">
+      </div>
+    </form>
+    <div id="myDiv">
+      <table id="momo-table">
+      </table>
     </div>
-    <div class="formDiv">
-      <label id="labelReceive" for="receiveName">Receiver</label>
-      <input type="text" id="receiveName" maxlength="15"><br>
-    </div>
-    <div class="formDiv">
-      <label id="labelName" for="receiveNUmber">Receiver's Number</label>
-      <input type="text" id="receiveNumber" maxlength="10"><br>
-    </div>
-    <div class="formDiv">
-      <label id="labeAmount" for="amount">Amount</label>
-      <input type="number" id="amount" max="10000" min="100"> <br>
-    </div>
-    <div class="formDiv">
-      <input type="submit" value="Send" id="submitted">
-    </div>
-  </form>
-  <div id="myDiv">
-    <table id="momo-table">
-    </table>
   </div>
   <script src="andelaTask.js"></script>
 </body>

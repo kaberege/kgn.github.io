@@ -73,7 +73,6 @@ function showQuestion() {
     myDiv.appendChild(radioInput);
     myDiv.appendChild(button);
     answerButtons.appendChild(myDiv);
-    button.addEventListener("click", selectAnswer);
   });
 }
 
@@ -111,14 +110,5 @@ function displayNext() {
   }
 }
 
-function selectAnswer(e) {
-  const selectedBtn = e.target;
-  const isCorrect = selectedBtn.dataset.correct == "true";
-  if (isCorrect) {
-    selectedBtn.classList.add("correct");
-  } else {
-    selectedBtn.classList.add("incorrect");
-  }
-}
 startQuiz();
 

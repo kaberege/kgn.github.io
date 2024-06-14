@@ -4,15 +4,104 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: linear-gradient(120deg, rgba(220, 190, 200, 0), rgba(170, 200, 129, 0.4), rgba(140, 240, 90, 0.4));
-  min-height: 100vh;
+.mycontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 30px 1px 60px 1px;
 }
 
+#nav {
+  background-color: rgba(240, 240, 240, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.myImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#navImg {
+  border-radius: 50%;
+}
+
+#listedNav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.navList>a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navList {
+  transition: all 1s ease;
+}
+
+.navList:hover {
+  transform: rotateY(180deg);
+}
+
+.linkedlin {
+  color: rgba(0, 200, 255, 1);
+}
+
+.mydiscord {
+  color: rgb(138, 43, 226);
+}
+
+.insta {
+  color: rgb(251, 173, 80);
+}
+
+.xeeter {
+  color: rgba(80, 0, 200, 1);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  #nav {
+    height: 41px;
+    padding: 0 3% 0 1%;
+  }
+
+  #navImg {
+    width: 40px;
+    height: 40px;
+  }
+
+  #question {
+    font-size: 17px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #nav {
+    height: 60px;
+    padding: 0 2% 0 1%;
+  }
+
+  #navImg {
+    width: 57px;
+    height: 57px;
+  }
+}
 form {
   width: 80%;
   max-width: 600px;
-  margin: 10px auto 10px auto;
+  margin: 0px auto 0px auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -38,8 +127,8 @@ input {
 }
 
 #myDiv {
-  width: 80%;
-  margin: 20px auto 10px auto;
+  width: 98%;
+  margin: 0 auto 0 auto;
   overflow: scroll;
 }
 

@@ -10,25 +10,44 @@
 </head>
 
 <body>
-  <div class="listApp">
-    <h1>To-do List</h2>
-      <div class="inputList">
-        <input type="text" id="todo-list" maxlength="15" placeholder="type here..">
-        <button type="submit" id="list-btn">Send</button>
-        <div class="selectDiv">
-          <select name="doList" class="my-select">
-            <option value="all">all</option>
-            <option value="completed">completed</option>
-            <option value="uncompleted">uncompleted</option>
-          </select>
+  <div class="mycontainer">
+    <nav id="nav">
+      <div class="myImg">
+        <img id="navImg" src="main-logo.jpeg" alt="kgn" title="kgn">
+        <img id="navImg" src="green.jpg" alt="kgn" title="kgn">
+      </div>
+      <ul id="listedNav">
+        <li class="navList"> <a href="https://www.linkedin.com/in/kaberege-godard-nestor-53a0b4215" target="_blank"
+            class="linkedlin"><i class="fab">&#xf08c;</i></a></li>
+        <li class="navList"> <a href="https://x.com/Kaberege_gn" target="_blank" class="xeeter"><i
+              class="fab">&#xf081;</i></a>
+        </li>
+        <li class="navList"> <a href="https://www.instagram.com/kgn_ke_hong/" target="_blank" class="insta"><i
+              class="fab">&#xf16d;</i></a></li>
+        <li class="navList"> <a href="https://discord.com/invite/Yx5CjAFM" target="_blank" class="mydiscord"><i
+              class='fab'>&#xf392;</i></a></li>
+      </ul>
+    </nav>
+    <div class="listApp">
+      <h1>To-do List</h2>
+        <div class="inputList">
+          <input type="text" id="todo-list" maxlength="15" placeholder="type here..">
+          <button type="submit" id="list-btn">Send</button>
+          <div class="selectDiv">
+            <select name="doList" class="my-select">
+              <option value="all">all</option>
+              <option value="completed">completed</option>
+              <option value="uncompleted">uncompleted</option>
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="outputList">
-        <ul id="listed">
-        </ul>
-      </div>
+        <div class="outputList">
+          <ul id="listed">
+          </ul>
+        </div>
+    </div>
   </div>
-  <script src="todoJs.js"></script>
+    <script src="todoJs.js"></script>
 </body>
 
 </html>

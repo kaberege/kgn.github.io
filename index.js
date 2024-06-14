@@ -25,7 +25,6 @@ window.addEventListener("scroll", () => {
     }
 });
 
-
 barIcon.addEventListener("click", () => {
     if (mySide.className == "navlist") {
         mySide.className = "responsiveSide";     //display side bar when bar icon is clicked
