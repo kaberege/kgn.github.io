@@ -24,3 +24,9 @@ myEqual.addEventListener("click", () => {
 });
 
 
+//================styling logo image=========================
+const myTurn = document.getElementById("navImg1");
+setInterval(myTransform, 20);
+function myTransform() {
+    myTurn.style.transform += "rotateZ(-1deg)";
+}

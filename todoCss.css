@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .mycontainer {
   display: flex;
   flex-direction: column;
@@ -25,8 +26,10 @@
   align-items: center;
 }
 
-#navImg {
+#navImg1,
+#navImg2 {
   border-radius: 50%;
+  cursor: pointer;
 }
 
 #listedNav {
@@ -67,33 +70,6 @@
   color: rgba(80, 0, 200, 1);
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-  #nav {
-    height: 41px;
-    padding: 0 3% 0 1%;
-  }
-
-  #navImg {
-    width: 40px;
-    height: 40px;
-  }
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  #nav {
-    height: 60px;
-    padding: 0 2% 0 1%;
-  }
-
-  #navImg {
-    width: 57px;
-    height: 57px;
-  }
-}
-
 .listApp {
   width: 80%;
   max-width: 600px;
@@ -106,11 +82,11 @@
 
 .listApp>h1 {
   color: #af5;
-  padding-bottom: 20px;
 }
 
-.inputList {
+.myInput {
   display: flex;
+  flex-direction: row;
 }
 
 #todo-list {
@@ -122,6 +98,13 @@
 #list-btn {
   padding: 10px;
   border: none;
+  cursor: pointer;
+  background-color: rgba(14, 202, 155, 1);
+  transition: all 0.5s ease;
+}
+
+#list-btn:hover {
+  background-color: rgba(17, 201, 26, 0.5);
 }
 
 .outputList {
@@ -142,8 +125,7 @@
 .my-text {
   padding: 7px;
   background-color: #45ffad;
-  width: 100%;
-  width: 200px;
+  width: 80%;
 }
 
 .my-checkbox,
@@ -169,13 +151,58 @@
   opacity: 0.5;
 }
 
-.selectDiv {
-  margin-left: 15px;
-}
-
 .my-select {
   outline: none;
   border: none;
   padding: 3px;
   cursor: pointer;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  #nav {
+    height: 41px;
+    padding: 0 3% 0 1%;
+  }
+
+  #navImg1,
+  #navImg2 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .inputList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #todo-list {
+    padding: 6px;
+  }
+
+  #list-btn {
+    padding: 6px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #nav {
+    height: 60px;
+    padding: 0 2% 0 1%;
+  }
+
+  #navImg1,
+  #navImg2 {
+    width: 57px;
+    height: 57px;
+  }
+
+  .inputList {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 }

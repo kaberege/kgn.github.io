@@ -41,3 +41,10 @@ function rePlay() {
   [seconds, minutes, hours] = [0, 0, 0];
   myDisplay.innerHTML = "00:" + "00:" + "00";
 }
+
+//================styling logo image=========================
+const myTurn = document.getElementById("navImg1");
+setInterval(myTransform, 20);
+function myTransform() {
+  myTurn.style.transform += "rotateZ(-1deg)";
+}

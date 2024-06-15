@@ -27,8 +27,10 @@
   align-items: center;
 }
 
-#navImg {
+#navImg1,
+#navImg2 {
   border-radius: 50%;
+  cursor: pointer;
 }
 
 #listedNav {
@@ -69,32 +71,6 @@
   color: rgba(80, 0, 200, 1);
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-  #nav {
-    height: 41px;
-    padding: 0 3% 0 1%;
-  }
-
-  #navImg {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  #nav {
-    height: 60px;
-    padding: 0 2% 0 1%;
-  }
-
-  #navImg {
-    width: 57px;
-    height: 57px;
-  }
-}
-
 .stopwatch {
   background: linear-gradient(149deg, rgba(104, 202, 47, 0.4), rgba(204, 102, 47, 0.4), rgba(67, 192, 207, 0.4));
   width: 80%;
@@ -126,4 +102,32 @@ button>i {
 
 .controls {
   margin-top: 90px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  #nav {
+    height: 41px;
+    padding: 0 3% 0 1%;
+  }
+
+  #navImg1,
+  #navImg2 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #nav {
+    height: 60px;
+    padding: 0 2% 0 1%;
+  }
+
+  #navImg1,
+  #navImg2 {
+    width: 57px;
+    height: 57px;
+  }
 }
