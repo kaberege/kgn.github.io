@@ -1,38 +1,38 @@
 const questions = [
   {
-    question: "which is largest animal in the world?",
+    question: "Which is a favorite server-side programming language?",
     answers: [
-      { text: "Shark", correct: false },
-      { text: "Blue WHale", correct: true },
-      { text: "Elephant", correct: false },
+      { text: "HTML", correct: false },
+      { text: "Javascript", correct: true },
+      { text: "Lingua", correct: false },
       { text: "Giraffe", correct: false }
     ]
   },
   {
-    question: "which is largest Liver in the world?",
+    question: "Which is a favorite css framework?",
     answers: [
       { text: "Nile", correct: false },
-      { text: "Yangtse", correct: true },
+      { text: "Bootstrap", correct: true },
       { text: "Mississipi", correct: false },
       { text: "Zambezi", correct: false }
     ]
   },
   {
-    question: "which is biggest country in the world?",
+    question: "Which is a favorite operating system?",
     answers: [
-      { text: "Russia", correct: false },
-      { text: "USA", correct: true },
-      { text: "Canada", correct: false },
-      { text: "China", correct: false }
+      { text: "Python", correct: false },
+      { text: "Linux", correct: true },
+      { text: "Hover", correct: false },
+      { text: "Click", correct: false }
     ]
   },
   {
-    question: "which is strongest animal in the world?",
+    question: "Which is a favorite command shell?",
     answers: [
       { text: "Cheeter", correct: false },
-      { text: "Lion", correct: true },
-      { text: "Elephant", correct: false },
-      { text: "Rat", correct: false }
+      { text: "Power shell", correct: true },
+      { text: "Hacker", correct: false },
+      { text: "Ration", correct: false }
     ]
   }
 ];

@@ -1,19 +1,19 @@
 const questions = [
   {
-    question: "which is largest animal in the world?",
-    answers: "Blue WHale"
+    question: "Which is a favorite server-side programming language?",
+    answers: "Javascript"
   },
   {
-    question: "which is largest Liver in the world?",
-    answers: "Nile"
+    question: "Which is a favorite css framework?",
+    answers: "Bootstrap"
   },
   {
-    question: "which is biggest country in the world?",
-    answers: "Russia"
+    question: "Which is a favorite operating system?",
+    answers: "Linux"
   },
   {
-    question: "which is strongest animal in the world?",
-    answers: "Lion"
+    question: "Which is a favorite command shell?",
+    answers: "Power shell"
   }
 ];
 
